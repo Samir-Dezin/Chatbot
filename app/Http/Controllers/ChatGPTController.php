@@ -14,6 +14,11 @@ class ChatGPTController extends Controller
         $this->chatGPTService = $chatGPTService;
     }
 
+    public function index(){
+       return "hello world";
+    }
+    
+
     public function getResponse(Request $request)
     {
         // Extract query from request body
